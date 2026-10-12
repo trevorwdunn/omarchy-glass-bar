@@ -4,7 +4,7 @@
   "name": "Glass Bar",
   "version": "0.1.0",
   "author": "Trevor",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "description": "Turns the bar into a liquid-glass rod: a copy of the wallpaper behind the bar is bent at the rim and lit along the edge.",
   "kinds": [
     "bar-widget"

@@ -36,4 +36,6 @@ The lens model is a port of the optics described in [gentpan/liquidglass](https:
 
 ## Licence
 
-MIT
+GPL-3.0-or-later. You may use, change and share this for any purpose; if you distribute a changed version, its source has to be available under the same licence. See `LICENSE`.
+
+The lens model comes from liquidglass, which is MIT licensed; its copyright notice and licence are kept in `THIRD-PARTY-NOTICES.md`.
