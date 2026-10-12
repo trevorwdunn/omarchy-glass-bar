@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "trevor.glass",
+  "name": "Glass Bar",
+  "version": "0.1.0",
+  "author": "Trevor",
+  "license": "MIT",
+  "description": "Turns the bar into a liquid-glass rod: a copy of the wallpaper behind the bar is bent at the rim and lit along the edge.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Glass Bar",
+    "description": "Invisible widget that paints refracting glass behind the whole bar.",
+    "category": "Layout",
+    "allowMultiple": false,
+    "defaultSection": "left",
+    "defaults": {
+      "refraction": 0,
+      "chroma": 0.2,
+      "specular": 0,
+      "glass": true,
+      "tint": 0,
+      "boldText": true
+    },
+    "schema": [
+      { "key": "glass", "type": "boolean", "label": "Liquid Glass", "defaultValue": true, "description": "Paint refracting glass behind the bar. Off leaves the bar's normal background." },
+      { "key": "boldText", "type": "boolean", "label": "Bold bar text", "defaultValue": true, "description": "Makes labels on the bar and in its drop-downs bold so they stand out against the glass. Turning it off takes effect after a shell restart." },
+      { "key": "refraction", "type": "integer", "label": "Bend at the rim (px)", "min": 0, "max": 24, "step": 1, "defaultValue": 0 },
+      { "key": "chroma", "type": "number", "label": "Colour fringe", "min": 0, "max": 0.4, "step": 0.05, "defaultValue": 0.2 },
+      { "key": "specular", "type": "number", "label": "Rim highlight", "min": 0, "max": 1, "step": 0.05, "defaultValue": 0 },
+      { "key": "tint", "type": "number", "label": "Dark tint", "min": 0, "max": 0.6, "step": 0.05, "defaultValue": 0, "description": "Darkens the glass so bar text stays readable over a bright wallpaper." }
+    ]
+  }
+}
